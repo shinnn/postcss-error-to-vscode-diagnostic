@@ -1,0 +1,37 @@
+{
+  "name": "postcss-error-to-vscode-diagnostic",
+  "version": "1.0.0",
+  "description": "Convert a CssSyntaxError of PostCSS into a diagnostic of Visual Studio Code",
+  "repository": "shinnn/postcss-error-to-vscode-diagnostic",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
+    "test": "nyc --reporter=html --reporter=text node test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "css",
+    "postcss",
+    "vscode",
+    "syntax",
+    "error",
+    "diagnostic",
+    "convert",
+    "compatibility",
+    "interface",
+    "object"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.15.0",
+    "nyc": "^10.1.2",
+    "postcss": "^5.2.14",
+    "tape": "^4.6.3"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
+  }
+}
